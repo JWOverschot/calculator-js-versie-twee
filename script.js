@@ -16,7 +16,8 @@ function operator(s) {
 	sum.innerHTML += s;
 }
 
-function result() {
+function answer() {
 	calNumbs.push(sum.innerHTML);
 	console.log(calNumbs);
+	result.innerHTML = eval(calNumbs[0]);
 }
