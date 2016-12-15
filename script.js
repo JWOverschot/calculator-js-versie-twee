@@ -31,6 +31,8 @@ function operator(s) {
 	if (count == 2) {
 		answer();
 		calNumbs.splice(1, 1, s);
+		display.value = result.value;
+		display.value += s;
 	}
 	else {
 		calNumbs.push(s);
