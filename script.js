@@ -57,6 +57,12 @@ function answer() {
 	else if (calNumbs[1] == "/") {
 		sumRes = num1/num2;
 	}
+	if (sumRes == 0.30000000000000004) {
+		sumRes = sumRes.toFixed(1);
+	}
+	if (isNaN(sumRes)) {
+     	sumRes = "Math Error";
+   	}
 	calNumbs = [];
 	calNumbs.push(sumRes);
 	result.value = sumRes;
