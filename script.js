@@ -37,6 +37,9 @@ function operator(s) {
 	else {
 		calNumbs.push(s);
 	}
+	if (s == "=") {
+		display.value = "";
+	}
 }
 
 function answer() {
