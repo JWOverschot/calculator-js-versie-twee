@@ -17,11 +17,11 @@ content {
     position: fixed;
     top: 6px;
     left: 12px;
-    width: 41%;
+    width: 0px;
 }
 
 #sum, #result {
-	width: 74%;
+	width: 312px;
     height: 37px;
     margin-top: 7px;
     font-size: xx-large;
