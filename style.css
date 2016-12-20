@@ -11,34 +11,41 @@ content {
 }
 
 .display {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content: space-around;
-	align-self: flex-start;
-	position: fixed;
-	left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    position: fixed;
+    top: 6px;
+    left: 12px;
+    width: 41%;
 }
 
 #sum, #result {
-	width: 97.4%;
-	height: 45px;
-	margin-top: 5px;
-	font-size: 100;
+	width: 74%;
+    height: 37px;
+    margin-top: 7px;
+    font-size: xx-large;
+    font-family: 'Aldrich', sans-serif;
+    color: #7DF9FF;
+    background-color: black;
+    padding: 2px;
+    border: 3px solid white;
 }
 
 .buttons {
 	width: 100px;
 	height: 100px;
 	font-size: xx-large;
-	background-color: #7DF9FF;
+	background-color: black;
 	margin: 5px;
-	border: 3px solid black;
+	border: 3px solid white;
 	outline: none;
-
+	font-family: 'Aldrich', sans-serif;
+	color: white;
 }
 
 .buttons:hover {
-	background-color: white;
+	background-color: #7DF9FF;
 	box-shadow: 0px 0px 15px 4px #7DF9FF;
 }
 
@@ -62,10 +69,14 @@ content {
 #flex1-2 {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
+    left: -5px;
 }
 
 #flex2 {
 	display: flex;
 	flex-wrap: wrap;
 	width: 140px;
+	position: relative;
+    left: -12px;
 }
