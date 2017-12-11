@@ -4,6 +4,19 @@ var display = document.getElementById("sum");
 var num = "";
 var sumRes = "";
 
+window.addEventListener("keydown", function (event) { 
+	event = event || window.event;
+	var key = event.key || event.which || event.keyCode;
+	key = key.toLowerCase();
+	console.log(key);
+	if((key >= 0 && key <= 9) || key === "." || key === "c") {
+		insert(key);
+	}
+	else if(["/", "*", "-", "+", "=", "Enter"].includes(key)) {
+		operator(key);
+	}
+});
+
 function insert(n) {
 	display.value += n;
 	
@@ -37,7 +50,7 @@ function operator(s) {
 	else {
 		calNumbs.push(s);
 	}
-	if (s == "=") {
+	if (["=", "Enter"].includes(s)) {
 		display.value = "";
 	}
 }
