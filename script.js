@@ -12,7 +12,7 @@ window.addEventListener("keydown", function (event) {
 	if((key >= 0 && key <= 9) || key === "." || key === "c") {
 		insert(key);
 	}
-	else if(["/", "*", "-", "+", "=", "Enter"].includes(key)) {
+	else if(["/", "*", "-", "+", "=", "enter"].includes(key)) {
 		operator(key);
 	}
 });
@@ -50,7 +50,7 @@ function operator(s) {
 	else {
 		calNumbs.push(s);
 	}
-	if (["=", "Enter"].includes(s)) {
+	if (["=", "enter"].includes(s)) {
 		display.value = "";
 	}
 }
